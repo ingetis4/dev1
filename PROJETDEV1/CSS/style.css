@@ -1,0 +1,214 @@
+* {box-sizing: border-box}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.notification {
+	position: fixed;
+	margin: 2vh auto;
+	padding: 0 15px;
+	left: 40vw;
+	right: 40vw;
+	width: 20vw;
+	background-color: #eee;
+	border: 2px solid #ddd;
+}
+
+.notification[type=erreur] {
+	border: 2px solid darkred;
+	color: darkred;
+}
+
+.notification[type=succes] {
+	border: 2px solid darkgreen;
+	color: darkgreen;
+}
+
+.grad {
+	background-image: url(../IMG/fond.jpg);
+	background-size: cover;
+}
+
+hr {
+	border: 0;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 25px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	padding: 8px;
+	text-align: left;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+button:hover {
+	opacity:1;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.header {
+	color: #fff;
+	margin: 25px 50px 50px 50px;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+.header p {
+	margin: 0;
+	font-size: 1em;
+}
+
+.nav {
+	position: fixed;
+	top: 5%;
+	right: 5%;
+}
+
+.nav a {
+	color: white;
+	text-shadow: 1px 1px #555;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.nav a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.container {
+	width: 50vw;
+	padding: 16px;
+	margin: 0 auto;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+}
+
+.input {
+	margin: 0 1%
+}
+
+input:not([type=radio]):not([type=checkbox]), select {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.demi {
+	width: 48%;
+	display: inline-block;
+}
+
+.navbar {
+	color: #fff;
+}
+
+.navbar h1 {
+	margin: 0;
+	padding: 7px 25px;
+}
+
+.content {
+	width: 60%;
+	margin: 100px auto;
+}
+
+.questionnaire {
+	border: 2px solid #ddd;
+	padding: 15px;
+	margin: 20px 0;
+	background-color: #eee;
+}
+
+.questionnaire h3, .questionnaire h4, .questionnaire p {
+	display: inline;
+	margin: 1em 10% 1em 1em;
+}
+
+.questionnaire a {
+	float: right;
+}
+
+.question {
+	text-align: center;
+	border: 2px solid #ddd;
+	padding: 15px;
+	margin: 20px 0;
+	background-color: rgba(238, 238, 238, 0.75);
+}
+
+.reponse {
+	width: 40%;
+	display: inline-block;
+	margin: 10% 5% 0 5%;
+}
+
+.reponse h3 {
+	display: inline;
+	margin: 2%;
+}
+.cocher::before {
+	content: "x - ";
+}
+.rouge {
+	color: red;
+}
+.vert {
+	color: green;
+}
+#dynamicInput input[type=text] {
+	width: 50%;
+	margin: 10px;
+}
+.box {
+	width: 100%;
+	height: 30vh;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 600px){
+	.questionnaire h3, .questionnaire p, .questionnaire button {
+		margin: 0 0 1em 0;
+		display: block;
+	}
+}
